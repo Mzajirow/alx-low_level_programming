@@ -3,13 +3,14 @@
 #include <time.h>
 
 /**
- * main - assigns random number to int n everytime
- * executes it and prints the last digit
+ * main - prints last digit of random 
+ * number stored in variable n
  * return: Always 0 (sucess)
  */
 int main(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	printf("Last digit of %d is %d, n, n % 10);
